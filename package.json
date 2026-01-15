@@ -1,0 +1,15 @@
+{
+  "name": "joy-enter",
+  "version": "1.0.0",
+  "description": "Joy Enter Attendance System",
+  "scripts": {
+    "build": "echo 'No build required for static site'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+
+
