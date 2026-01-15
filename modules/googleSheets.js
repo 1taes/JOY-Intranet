@@ -106,8 +106,9 @@ async function generateJWT(serviceAccount) {
     });
     
     if (!response.ok) {
-        throw new Error('토큰 교환 실패');
-    }
+  const text = await response.text();
+  throw new Error(`토큰 교환 실패: ${response.status} ${text}`);
+}
     
     const data = await response.json();
     return data.access_token;
